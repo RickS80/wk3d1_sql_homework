@@ -18,3 +18,6 @@ INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 20
 UPDATE movies SET show_time = '20:45' WHERE title = 'Iron Man 3';
 -- Extension
 -- Research how to delete multiple entries from your table in a single command.
+DELETE from movies WHERE id IN (1, 3, 5, 7 ,9);
+DELETE FROM movies WHERE id BETWEEN 10 and 20;
+DELETE FROM movies WHERE id > 10 and id < 20;
